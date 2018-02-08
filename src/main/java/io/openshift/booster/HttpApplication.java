@@ -15,7 +15,7 @@ public class HttpApplication extends AbstractVerticle {
 
   @Override
   public void start(Future<Void> future) {
-    // Create a router object.
+    // Create a router object
     Router router = Router.router(vertx);
 
     router.get("/api/greeting").handler(this::greeting);
